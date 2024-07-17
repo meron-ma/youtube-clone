@@ -1,0 +1,18 @@
+body {
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+.all-videos {
+  padding-left: 95px;
+  background-color: rgb(250, 247, 247);
+  padding-top: 75px;
+  padding-right: 20px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}

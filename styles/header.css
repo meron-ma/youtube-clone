@@ -1,0 +1,142 @@
+header {
+  display: flex;
+  height: 55px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid rgb(192, 192, 192);
+}
+svg {
+  width: 25px;
+  height: 25px;
+}
+.left {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 60px;
+}
+.middle {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 500px;
+}
+.right {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  width: 200px;
+  justify-content: space-between;
+  margin-left: 35px;
+  flex-shrink: 0;
+}
+header img {
+  width: 25px;
+  height: 25px;
+}
+.left svg {
+  margin-right: 24px;
+  cursor: pointer;
+}
+.left img {
+  width: 95px;
+  cursor: pointer;
+}
+input {
+  margin-right: -1px;
+  width: 0px;
+  font-size: 16px;
+  height: 36px;
+  flex: 1;
+  border: 1px solid rgb(192, 192, 192);
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  padding-left: 12px;
+}
+button {
+  height: 40px;
+  width: 64px;
+  background-color: rgb(248, 248, 248);
+  border: 1px solid rgb(192, 192, 192);
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.middle svg {
+  width: 22px;
+  height: 20px;
+}
+.voice {
+  background-color: rgb(248, 248, 248);
+  padding: 10px;
+  border-radius: 50%;
+  margin-left: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+input::placeholder {
+  font-size: 16px;
+}
+.acc-pfp {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.notification {
+  position: relative;
+}
+.notification-count {
+  background-color: rgb(204, 5, 5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 1px 5px;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+}
+.tooltip {
+  background-color: rgb(131, 130, 130);
+  position: absolute;
+  padding: 10px 8px;
+  color: white;
+  font-size: 11px;
+  border-radius: 2px;
+  bottom: -48px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+.upload,
+.notification-wtooltip,
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+button:hover .tooltip,
+.voice:hover .tooltip,
+.upload:hover .tooltip,
+.app:hover .tooltip,
+.notification-wtooltip:hover .tooltip {
+  opacity: 1;
+}

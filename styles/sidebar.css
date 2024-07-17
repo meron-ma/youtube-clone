@@ -1,0 +1,30 @@
+nav img {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 8px;
+}
+nav svg {
+  margin-bottom: 8px;
+}
+nav {
+  position: fixed;
+  background-color: white;
+  top: 55px;
+  bottom: 0px;
+  z-index: 300;
+  width: 75px;
+}
+.nav-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.15ds;
+  padding: 15px 0px;
+}
+.nav-box:hover {
+  background-color: rgb(192, 192, 192);
+}
